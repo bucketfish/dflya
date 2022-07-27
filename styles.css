@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: mini-wakuwaku;
+    src: url("mini-wakuwaku.otf");
+}
+
+:root {
+  --pink: #F5B8C5;
+  --lightgreen: #9DBEAA;
+  --darkgreen: #2D6257;
+  --lightbrown: #CCB4A4;
+  --darkbrown: #794835;
+  --white: #FFFEF2;
+  --black: #271D16;
+
+  --t-white: #FFFEF2BB;
+  --t-black: #271D1677;
+  --t-brown: #BD9F8955;
+  --t-darkbrown: rgba(121,72,53,0.7);
+
+  --title-font: mini-wakuwaku, sans-serif;
+  --body-font: 'Nunito', sans-serif;
+
+
+
+}
+
+* {
+  color: var(--black);
+  font-family: var(--body-font);
+}
+
+body {
+  background-color: var(--lightgreen);
+}
+
+h1 {
+  font-family: var(--title-font);
+  color: var(--darkbrown);
+}
+
+.container {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.content-box {
+  border: 7px solid var(--lightbrown);
+  border-radius: 40px;
+  background-color: var(--t-white);
+  padding: 20px;
+}
+
+.box {
+  margin-bottom: 10px;
+}
+
+/* Style the search box inside the navigation bar */
+
+.search-bar {
+  width: 100%;
+}
+
+.search-bar input[type=text] {
+  padding: 8px 10px;
+  background-color: var(--white);
+  border: 7px solid var(--lightbrown);
+  font-size: 17px;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing:border-box;
+
+  background-image: url('assets/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+
+
+}
+
+.search-bar input[type=text]:focus {
+  outline:none;
+  border-color: var(--darkbrown);
+}
+
+
+.search-bar input[type=text]::placeholder {
+  color: var(--t-black);
+}
+
+
+.filters {
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter {
+  border-radius: 30px;
+  border: 3px var(--pink) solid;
+  padding: 5px 10px ;
+
+}
+
+.filter:hover {
+  background-color: var(--white);
+}
+
+
+
+.resource-box {
+  border: 7px solid var(--lightbrown);
+  background-color: var(white);
+  border-radius: 20px;
+  padding: 25px;
+/*
+  -webkit-box-shadow: 4px 4px 12px 1px var(--brownshadow);
+  box-shadow: 3px 3px 12px 1px var(--brownshadow); */
+
+
+}
+
+
+/* .resource-box:hover {
+  border-color: var(--pink);
+
+} */
