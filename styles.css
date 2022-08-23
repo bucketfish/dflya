@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: mini-wakuwaku;
-    src: url("mini-wakuwaku.otf");
+    src: url("fonts/mini-wakuwaku.otf");
 }
 
 :root {
@@ -98,32 +98,32 @@ h1 {
 }
 
 .filter {
+  font-size: 16px;
+  background-color: transparent;
   border-radius: 30px;
   border: 3px var(--pink) solid;
   padding: 5px 10px ;
 
 }
 
-.filter:hover {
+.filter:hover[data-selected='0'] {
   background-color: var(--white);
 }
 
+.filter[data-selected='1']{
+  background-color: var(--t-brown)
+}
 
 
 .resource-box {
   border: 7px solid var(--lightbrown);
   background-color: var(white);
   border-radius: 20px;
-  padding: 25px;
-/*
-  -webkit-box-shadow: 4px 4px 12px 1px var(--brownshadow);
-  box-shadow: 3px 3px 12px 1px var(--brownshadow); */
-
-
+  padding: 10px 25px;
 }
 
-
-/* .resource-box:hover {
-  border-color: var(--pink);
-
-} */
+.tag {
+  border-radius: 30px;
+  border: 3px var(--lightgreen) solid;
+  padding: 5px 10px ;
+}

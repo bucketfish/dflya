@@ -12,29 +12,53 @@
       <h1 style="text-align: center;">welcome to the cafe :)</h1>
       <div class="content-box">
         <div class="box search-bar">
-          <input type="text" placeholder="search for anxiety, coping methods, calming techniques...">
+          <input id="search-bar" type="text" onkeyup="search()" placeholder="search for anxiety, coping methods, calming techniques...">
 
         </div>
         <div class="box">
           <div class="filters">
-            <div class="filter">
+            <button onclick="filter(this.id)" id="anxiety" class="filter" data-selected=0>
               anxiety
-            </div>
-            <div class="filter">
+            </button>
+            <button onclick="filter(this.id)" id="depression" class="filter" data-selected=0>
               depression
-            </div>
-            <div class="filter">
+            </button>
+            <button onclick="filter(this.id)" id="neurodivergency" class="filter" data-selected=0>
               neurodivergency
-            </div>
+            </button>
+            <button onclick="filter(this.id)" id="stress" class="filter" data-selected=0>
+              stress
+            </button>
           </div>
 
           <div class="filters">
-            <div class="filter">
-              for myself
-            </div>
-            <div class="filter">
-              for others
-            </div>
+            <button onclick="filter(this.id)" id="understanding" class="filter" data-selected=0>
+              understanding
+            </button>
+            <button onclick="filter(this.id)" id="managing" class="filter" data-selected=0>
+              managing
+            </button>
+            <button onclick="filter(this.id)" id="preventing" class="filter" data-selected=0>
+              preventing
+            </button>
+            <button onclick="filter(this.id)" id="identifying" class="filter" data-selected=0>
+              identifying
+            </button>
+            <button onclick="filter(this.id)" id="coping" class="filter" data-selected=0>
+              coping
+            </button>
+            <button onclick="filter(this.id)" id="calming" class="filter" data-selected=0>
+              calming
+            </button>
+          </div>
+
+          <div class="filters">
+            <button onclick="filter(this.id)" id="for-myself" class="filter" data-selected=0>
+              for-myself
+            </button>
+            <button onclick="filter(this.id)" id="for-others" class="filter" data-selected=0>
+              for-others
+            </button>
           </div>
 
         </div>
@@ -42,16 +66,41 @@
 
 
         <div class="box resource-box">
+          <h1>importance of reaching out</h1>
+          <div class="tags-list">
+            <span class="tag">understanding</span> <span class="tag">for-others</span>
+
+
+          </div>
+          <p>some stuff. a resource!</p>
+
+        </div>
+        <div class="box resource-box">
+          <h1>deep breathing animations</h1>
+
+          <div class="tags-list">
+            <span class="tag">anxiety</span>
+            <span class="tag">stress</span>
+            <span class="tag">managing</span>
+            <span class="tag">calming</span>
+
+
+          </div>
 
           <p>some stuff. a resource!</p>
 
         </div>
         <div class="box resource-box">
+          <h1>alternate nostril breathing</h1>
 
-          <p>some stuff. a resource!</p>
+          <div class="tags-list">
+            <span class="tag">anxiety</span>
+            <span class="tag">stress</span>
+            <span class="tag">managing</span>
+            <span class="tag">calming</span>
 
-        </div>
-        <div class="box resource-box">
+
+          </div>
 
           <p>some stuff. a resource!</p>
 
@@ -62,4 +111,6 @@
     </div>
 
   </body>
+  <script src="script.js"></script>
+
 </html>
