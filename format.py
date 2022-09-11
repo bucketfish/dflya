@@ -57,6 +57,8 @@ for resource in resources:
         formatted_tags += curtag
     cur = cur.replace("{{tags}}", formatted_tags)
 
+    cur = cur.replace("{{duration}}", resource[4])
+    
     formatted += cur
 
 print()

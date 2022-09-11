@@ -144,6 +144,7 @@ p.desc {
 p.duration {
   /* font-size: 16px; */
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .meta {
@@ -151,6 +152,10 @@ p.duration {
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
+}
+
+.info {
+  align-items: flex-end;
 }
 
 .buttons {
