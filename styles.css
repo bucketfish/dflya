@@ -35,9 +35,19 @@ body {
   background-color: var(--lightgreen);
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: var(--title-font);
   color: var(--darkbrown);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .container {
@@ -119,11 +129,59 @@ h1 {
   border: 7px solid var(--lightbrown);
   background-color: var(white);
   border-radius: 20px;
-  padding: 10px 25px;
+  padding: 15px 25px;
+  padding-top: 10px;
+}
+
+.resource-box p {
+  margin: 5px 0;
+}
+
+p.desc {
+
+}
+
+p.duration {
+  /* font-size: 16px; */
+  font-weight: bold;
+}
+
+.meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.buttons {
+  align-items: center;
 }
 
 .tag {
   border-radius: 30px;
   border: 3px var(--lightgreen) solid;
   padding: 5px 10px ;
+}
+
+.tags-list {
+  align-items: center;
+}
+
+.use-button {
+  border-radius: 10px;
+  background-color: var(--lightbrown);
+  padding: 5px 20px;
+  border: 6px var(--lightbrown) solid;
+  box-sizing: content-box;
+}
+.use-button p {
+  text-align: center;
+  margin: 0;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.use-button:hover {
+  border: 6px var(--darkbrown) solid;
+  background-color: var(--darkbrown);
 }
