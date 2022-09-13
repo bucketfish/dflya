@@ -18,8 +18,11 @@ template = """
 <p class="duration">duration: {{duration}}</p>
 </div>
 <div class="meta buttons">
-<div class="tags-list">{{tags}}</div>
-<a href="{{url}}" target="_blank"><div class="use-button">
+<div class="tags-list">
+{{tags}}
+</div>
+<a href="{{url}}" target="_blank">
+<div class="use-button">
 <p>use me!</p>
 </div></a>
 </div>
@@ -58,7 +61,7 @@ for resource in resources:
     cur = cur.replace("{{tags}}", formatted_tags)
 
     cur = cur.replace("{{duration}}", resource[4])
-    
+
     formatted += cur
 
 print()

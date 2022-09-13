@@ -1,4 +1,5 @@
 var selected_filters = []
+var favs = []
 
 
 function arrayRemove(arr, value) {
@@ -7,6 +8,69 @@ function arrayRemove(arr, value) {
         return ele != value;
     });
 }
+
+function setCookie(cname, cvalue, exdays) {
+  // https://www.w3schools.com/js/js_cookies.asp
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  var json_str = JSON.stringify(cvalue);
+  console.log(json_str);
+  document.cookie = cname + "=" + json_str + ";" + expires + ";path=/";
+  console.log(document.cookie);
+}
+
+function getCookie(cname) {
+  // https://www.w3schools.com/js/js_cookies.asp
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return JSON.parse(c.substring(name.length, c.length));
+    }
+  }
+  return "";
+}
+// https://stackoverflow.com/questions/2980143/i-want-to-store-javascript-array-as-a-cookie
+// var arr = ['foo', 'bar', 'baz'];
+// var json_str = JSON.stringify(arr);
+// createCookie('mycookie', json_str);
+// var json_str = getCookie('mycookie');
+// var arr = JSON.parse(json_str);
+
+window.onload = function(){
+  favs = getCookie("favs")
+  console.log(favs)
+  if (!favs){favs = []}
+
+  for (var i = 0; i < favs.length; i++){
+    document.getElementById(favs[i]).firstElementChild.classList.add("in-fav");
+  }
+}
+
+function toggle_favs(name){
+    if (favs.includes(name)){
+      favs = arrayRemove(favs, name)
+      document.getElementById(name).firstElementChild.classList.remove("in-fav");
+    }
+    else {
+      favs.push(name)
+      document.getElementById(name).firstElementChild.classList.add("in-fav");
+    }
+
+    setCookie("favs", favs, 360);
+
+}
+
+function show_favs() {
+
+}
+
 
 function search() {
   // Declare variables
