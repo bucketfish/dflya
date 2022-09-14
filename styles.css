@@ -86,14 +86,26 @@ button.showfavs:hover {
 }
 
 
-#fav-box {
+#fav-box-container {
   display: none;
   width: 30%;
   max-width: 400px;
+
+}
+
+#fav-box {
   border: 7px solid var(--lightbrown);
   border-radius: 40px;
   background-color: var(--t-white);
   padding: 20px;
+  position: sticky;
+  top: 40px;
+  height: 85vh;
+}
+
+#fav-list {
+  overflow-y: scroll;
+  height: 90%;
 }
 
 #content-box {
@@ -257,6 +269,7 @@ p.duration {
 
 .info {
   align-items: flex-end;
+  margin-top: 20px;
 }
 
 .buttons {
@@ -270,6 +283,10 @@ p.duration {
 }
 
 .tags-list {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 5px;
+
   align-items: center;
 }
 

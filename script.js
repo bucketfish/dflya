@@ -82,10 +82,10 @@ function remove_favs(name){
 
 function show_favs() {
   if (showing_favs){
-    document.getElementById("fav-box").style.display = "none";
+    document.getElementById("fav-box-container").style.display = "none";
     showing_favs = false
   } else {
-    document.getElementById("fav-box").style.display = "block";
+    document.getElementById("fav-box-container").style.display = "block";
     showing_favs = true
   }
 }
