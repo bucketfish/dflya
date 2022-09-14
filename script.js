@@ -1,5 +1,6 @@
 var selected_filters = []
 var favs = []
+var showing_favs = false
 
 
 function arrayRemove(arr, value) {
@@ -50,6 +51,8 @@ window.onload = function(){
 
   for (var i = 0; i < favs.length; i++){
     document.getElementById(favs[i]).firstElementChild.classList.add("in-fav");
+    document.getElementById("fav-" + favs[i]).classList.add("showing");
+
   }
 }
 
@@ -57,18 +60,34 @@ function toggle_favs(name){
     if (favs.includes(name)){
       favs = arrayRemove(favs, name)
       document.getElementById(name).firstElementChild.classList.remove("in-fav");
+      document.getElementById("fav-" + name).classList.remove("showing");
     }
     else {
       favs.push(name)
       document.getElementById(name).firstElementChild.classList.add("in-fav");
+      document.getElementById("fav-" + name).classList.add("showing");
+
     }
 
     setCookie("favs", favs, 360);
+}
 
+function remove_favs(name){
+  name = name.slice(4);
+  console.log(name);
+  favs = arrayRemove(favs, name)
+  document.getElementById(name).firstElementChild.classList.remove("in-fav");
+  document.getElementById("fav-" + name).classList.remove("showing");
 }
 
 function show_favs() {
-
+  if (showing_favs){
+    document.getElementById("fav-box").style.display = "none";
+    showing_favs = false
+  } else {
+    document.getElementById("fav-box").style.display = "block";
+    showing_favs = true
+  }
 }
 
 

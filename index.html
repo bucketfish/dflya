@@ -13,84 +13,82 @@
 
     </div>
 
+    <h1 style="text-align: center;">welcome to the healing cafe 🌱</h1>
+
     <div class="container">
-      <h1 style="text-align: center;">welcome to the healing cafe 🌱</h1>
-      <div class="content-box">
-        <div class="box search-bar">
-          <input id="search-bar" type="text" onkeyup="search()" placeholder="search for anxiety, coping methods, calming techniques...">
 
-        </div>
-        <div class="box">
-          <div class="filters">
-            <button onclick="filter(this.id)" id="anxiety" class="filter" data-selected=0>
-              anxiety
-            </button>
-            <button onclick="filter(this.id)" id="depression" class="filter" data-selected=0>
-              depression
-            </button>
-            <button onclick="filter(this.id)" id="neurodivergency" class="filter" data-selected=0>
-              neurodivergency
-            </button>
-            <button onclick="filter(this.id)" id="stress" class="filter" data-selected=0>
-              stress
-            </button>
+        <div id="content-box">
+          <div class="box search-bar">
+            <input id="search-bar" type="text" onkeyup="search()" placeholder="search for anxiety, coping methods, calming techniques...">
           </div>
-
-          <div class="filters">
-            <button onclick="filter(this.id)" id="understanding" class="filter" data-selected=0>
-              understanding
-            </button>
-            <button onclick="filter(this.id)" id="managing" class="filter" data-selected=0>
-              managing
-            </button>
-            <button onclick="filter(this.id)" id="preventing" class="filter" data-selected=0>
-              preventing
-            </button>
-            <button onclick="filter(this.id)" id="identifying" class="filter" data-selected=0>
-              identifying
-            </button>
-            <button onclick="filter(this.id)" id="coping" class="filter" data-selected=0>
-              coping
-            </button>
-            <button onclick="filter(this.id)" id="calming" class="filter" data-selected=0>
-              calming
-            </button>
-          </div>
-
-          <div class="filters">
-            <button onclick="filter(this.id)" id="for-myself" class="filter" data-selected=0>
-              for-myself
-            </button>
-            <button onclick="filter(this.id)" id="for-others" class="filter" data-selected=0>
-              for-others
-            </button>
-          </div>
-
-        </div>
-
-
-
-        <div class="box resource-box" id="resource-0">
-          <button class="add-fav" onclick="toggle_favs(this.parentElement.id)"></button>
-          <h1>importance of reaching out</h1>
-          <div class="meta info">
-            <p class="desc">With the daily demands in our lives, we may sometimes feel stressed, worried, or even sad. These emotions are commonly experienced by all of us and we are not alone in facing them. When we feel overwhelmed, we can always reach out.</p>
-            <p class="duration">duration: 10 min</p>
-          </div>
-          <div class="meta buttons">
-            <div class="tags-list">
-              <span class="tag">understanding</span>
-              <span class="tag">for-others</span>
+          <div class="box">
+            <div class="filters">
+              <button onclick="filter(this.id)" id="anxiety" class="filter" data-selected=0>
+                anxiety
+              </button>
+              <button onclick="filter(this.id)" id="depression" class="filter" data-selected=0>
+                depression
+              </button>
+              <button onclick="filter(this.id)" id="neurodivergency" class="filter" data-selected=0>
+                neurodivergency
+              </button>
+              <button onclick="filter(this.id)" id="stress" class="filter" data-selected=0>
+                stress
+              </button>
             </div>
-            <a href="https://www.healthhub.sg/programmes/186/MindSG/Discover" target="_blank">
-            <div class="use-button">
-              <p>use me!</p>
-            </div></a>
-          </div>
-        </div>
 
-          <div class="box resource-box">
-            <button class="add-fav in-fav"></button>
+            <div class="filters">
+              <button onclick="filter(this.id)" id="understanding" class="filter" data-selected=0>
+                understanding
+              </button>
+              <button onclick="filter(this.id)" id="managing" class="filter" data-selected=0>
+                managing
+              </button>
+              <button onclick="filter(this.id)" id="preventing" class="filter" data-selected=0>
+                preventing
+              </button>
+              <button onclick="filter(this.id)" id="identifying" class="filter" data-selected=0>
+                identifying
+              </button>
+              <button onclick="filter(this.id)" id="coping" class="filter" data-selected=0>
+                coping
+              </button>
+              <button onclick="filter(this.id)" id="calming" class="filter" data-selected=0>
+                calming
+              </button>
+            </div>
+
+            <div class="filters">
+              <button onclick="filter(this.id)" id="for-myself" class="filter" data-selected=0>
+                for-myself
+              </button>
+              <button onclick="filter(this.id)" id="for-others" class="filter" data-selected=0>
+                for-others
+              </button>
+            </div>
+
+          </div>
+
+          <div class="box resource-box" id="resource-0">
+            <button class="add-fav" onclick="toggle_favs(this.parentElement.id)"></button>
+            <h1>importance of reaching out</h1>
+            <div class="meta info">
+              <p class="desc">With the daily demands in our lives, we may sometimes feel stressed, worried, or even sad. These emotions are commonly experienced by all of us and we are not alone in facing them. When we feel overwhelmed, we can always reach out.</p>
+              <p class="duration">duration: 10 min</p>
+            </div>
+            <div class="meta buttons">
+              <div class="tags-list">
+                <span class="tag">understanding</span>
+                <span class="tag">for-others</span>
+              </div>
+              <a href="https://www.healthhub.sg/programmes/186/MindSG/Discover" target="_blank">
+              <div class="use-button">
+                <p>use me!</p>
+              </div></a>
+            </div>
+          </div>
+          <div class="box resource-box" id="resource-1">
+            <button class="add-fav" onclick="toggle_favs(this.parentElement.id)"></button>
             <h1>deep breathing animations</h1>
             <div class="meta info">
               <p class="desc">a thread of deep breathing animations, made by nathan w pyle, for anyone who could use some deep breaths.</p>
@@ -101,71 +99,47 @@
                 <span class="tag">anxiety</span>
                 <span class="tag">stress</span>
                 <span class="tag">managing</span>
-                <span class="tag">calming</span></div>
-                <a href="https://twitter.com/nathanwpyle/status/1139676955316559872" target="_blank"><div class="use-button">
-                  <p>use me!</p>
+                <span class="tag">calming</span>
+              </div>
+              <a href="https://twitter.com/nathanwpyle/status/1139676955316559872" target="_blank">
+                <div class="use-button">
+                <p>use me!</p>
                 </div></a>
               </div>
             </div>
 
-            <div class="box resource-box">
-              <h1>alternate nostril breathing</h1>
-              <div class="meta info">
-                <p class="desc">Alternate nostril breathing is a yogic breath control practice. It is can be done as a part of a yoga or meditation practice, or on its own to help you quiet and still your mind.</p>
-                <p class="duration">duration: 10 min</p>
-              </div>
-              <div class="meta buttons">
-                <div class="tags-list">
-                  <span class="tag">anxiety</span>
-                  <span class="tag">stress</span>
-                  <span class="tag">managing</span>
-                  <span class="tag">calming</span></div>
-                  <a href="https://www.healthline.com/health/alternate-nostril-breathing" target="_blank"><div class="use-button">
-                    <p>use me!</p>
-                  </div></a>
-                </div>
-              </div>
+        </div>
 
-              <div class="box resource-box">
-                <h1>Belle, the beyond the label helpbot </h1>
-                <div class="meta info">
-                  <p class="desc"></p>
-                  <p class="duration">duration: <5 min</p>
-                  </div>
-                  <div class="meta buttons">
-                    <div class="tags-list">
-                      <span class="tag">for-myself</span>
-                      <span class="tag">managing</span>
-                      <span class="tag">coping</span>
-                      <span class="tag">identifying</span></div>
-                      <a href="ncss.gov.sg/our-initiatives/beyond-the-label/belle-beyond-the-label-helpbot#" target="_blank"><div class="use-button">
-                        <p>use me!</p>
-                      </div></a>
-                    </div>
-                  </div>
+      <div id="fav-box">
+        <h1>favorites 🍵</h1>
 
-                  <div class="box resource-box">
-                    <h1>PEER support tips</h1>
-                    <div class="meta info">
-                      <p class="desc"></p>
-                      <p class="duration">duration: 5 min</p>
-                    </div>
-                    <div class="meta buttons">
-                      <div class="tags-list">
-                        <span class="tag">understanding</span>
-                        <span class="tag">for-others</span></div>
-                        <a href="https://www.facebook.com/189782911705221/posts/823154941701345/?d=n" target="_blank"><div class="use-button">
-                          <p>use me!</p>
-                        </div></a>
-                      </div>
-                    </div>
+        <div id="fav-list">
+          <div class="fav-item box" id="fav-resource-0">
+            <button class="add-fav in-fav-box" onclick="remove_favs(this.parentElement.id)"></button>
+            <h1>importance of reaching out</h1>
+
+              <a href="https://www.healthhub.sg/programmes/186/MindSG/Discover" target="_blank">
+              <div class="use-button">
+                <p>use me!</p>
+              </div></a>
+            </div>
+        </div>
+
+        <div id="fav-list">
+          <div class="fav-item box" id="fav-resource-1">
+            <button class="add-fav in-fav-box" onclick="remove_favs(this.parentElement.id)"></button>
+            <h1>deep breathing animations</h1>
+
+              <a href="https://twitter.com/nathanwpyle/status/1139676955316559872" target="_blank">
+              <div class="use-button">
+                <p>use me!</p>
+              </div></a>
+            </div>
+
+        </div>
 
 
-
-
-                  </div>
-
-
+      </div>
     </div>
 
 

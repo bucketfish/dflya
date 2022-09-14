@@ -77,12 +77,27 @@ button.showfavs:hover {
 
 
 .container {
-  max-width: 800px;
   margin: 10px auto;
-  padding: 0 10px;
+  max-width: 90%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 10px;
 }
 
-.content-box {
+
+#fav-box {
+  display: none;
+  width: 30%;
+  max-width: 400px;
+  border: 7px solid var(--lightbrown);
+  border-radius: 40px;
+  background-color: var(--t-white);
+  padding: 20px;
+}
+
+#content-box {
+  max-width: 800px;
   border: 7px solid var(--lightbrown);
   border-radius: 40px;
   background-color: var(--t-white);
@@ -93,8 +108,12 @@ button.showfavs:hover {
   margin-bottom: 10px;
 }
 
-/* Style the search box inside the navigation bar */
+.box h1 {
+  margin-right: 65px;
+}
 
+
+/* Style the search box inside the navigation bar */
 .search-bar {
   width: 100%;
 }
@@ -168,6 +187,19 @@ button.showfavs:hover {
   margin: 5px 0;
 }
 
+.fav-item {
+  border: 7px solid var(--pink);
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 15px 25px;
+  padding-top: 10px;
+  position: relative;
+  display: none;
+}
+.fav-item.showing {
+  display: block;
+}
+
 p.desc {
 
 }
@@ -210,6 +242,10 @@ p.duration {
 
 .add-fav.in-fav:hover {
   border-color: var(--lightbrown);
+}
+
+.add-fav.in-fav-box:hover {
+  background-image: url("assets/cancel.png")
 }
 
 .meta {
