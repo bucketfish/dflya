@@ -97,7 +97,7 @@ button.showfavs:hover {
 }
 
 #content-box {
-  max-width: 800px;
+  width: 800px;
   border: 7px solid var(--lightbrown);
   border-radius: 40px;
   background-color: var(--t-white);
