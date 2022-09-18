@@ -52,7 +52,7 @@ body {
   background-image: url(assets/cake.png), url(assets/tea.png), url(assets/bubbletea.png), url(assets/bear.png), url(assets/cake2.png), url(assets/coffee.png), url(assets/roll.png);
   background-position: 5% 10%, 82% 95%, 100% 80%, 95% 20%, 60% 105%, 15% 100%, 2% 52%;
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 35vh;
   position: fixed;
 
 }
@@ -90,14 +90,16 @@ p {
 }
 
 #barista {
-  top: -20px;
-  position: relative;
+  top: 380px;
+  position: absolute;
+  height: calc(105vh - 380px);
+  left: 5%;
 }
 
 #letsgo {
-  position: relative;
-  top: -300px;
-  left: -50px;
+  position: absolute;
+  top: 70vh;
+  left: calc(105vh - 380px);
   font-size: 48px;
   text-align: center;
   color: var(--pink);
