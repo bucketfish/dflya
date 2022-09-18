@@ -87,6 +87,8 @@ p {
 .welcome .big-title {
   font-size: 120px;
   text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #barista {
@@ -104,6 +106,7 @@ p {
   text-align: center;
   color: var(--pink);
   text-shadow: 2px 2px var(--t-black);
+  z-index: 100;
 }
 #letsgo:hover {
   text-shadow: 2px 2px var(--t-white);
@@ -222,6 +225,7 @@ button.showfavs:hover {
   padding: 5px 10px;
   display: flex;
   gap: 10px;
+  flex-flow: row wrap;
 }
 
 .filter {
@@ -367,4 +371,82 @@ p.duration {
 .use-button:hover {
   border: 6px var(--darkbrown) solid;
   background-color: var(--darkbrown);
+}
+
+
+
+
+
+
+
+
+@media (max-aspect-ratio: 8/5)
+{
+  #content-box {
+    width: 90%;
+  }
+
+
+
+}
+
+@media (max-aspect-ratio: 1/1)
+{
+  .background {
+    background-size: 25vw;
+
+  }
+
+  .welcome {
+    padding-top: 20vh;
+  }
+
+  .welcome .big-title {
+    font-size: 20vw;
+  }
+
+
+  #barista {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 30vh;
+  }
+
+  #letsgo {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+}
+
+
+
+
+@media (hover: none) {
+  .filter:hover[data-selected='0'] {
+    background-color: transparent;
+  }
+
+  .add-fav:hover {
+    border-color: var(--lightbrown);
+    padding: 25px;
+    /* width: 60px; */
+    /* height: 60px; */
+  }
+
+  .add-fav.in-fav-box {
+    background-image: url("assets/cancel.png")
+  }
+
+  .add-fav.in-fav:hover {
+    border-color: var(--darkbrown);
+  }
+
+
+
 }
