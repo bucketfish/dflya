@@ -91,6 +91,17 @@ document.addEventListener('click', (event) => {
 }, {once : true});
 
 
+
+var slider = document.getElementById("volumeslider");
+var output = document.getElementById("demo");
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  song.volume = 0.01 * this.value;
+}
+
+
+
 function toggle_favs(name){
     if (favs.includes(name)){
       favs = arrayRemove(favs, name)

@@ -374,18 +374,52 @@ p.duration {
 }
 
 
-
-#song {
+.slidecontainer {
+  width: 100px;
   position: fixed;
+  left: 10px;
+  bottom: 145px;
+  transform: rotate(-90deg);
+  padding: 10px;
+  padding-top: 15px;
+  padding-right: 15px;
+  background-color: var(--t-white);
+  border: 7px solid var(--lightbrown);
+  border-radius: 0 100px 100px 0;
+}
 
-  padding: 25px;
-  left: 20px;
-  bottom: 10px;
-  border-radius: 50px;
-  background-image: url('assets/fav.png');
-  width: 120px;
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  background-color: var(--t-brown); /* Grey background */
+
+  border-radius: 100px;
+  /* outline: none; /* Remove outline */
+  /* opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  /* -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  /* transition: opacity .2s; */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--pink); /* Green background */
+  border-radius: 100px;
 
 }
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--pink); /* Green background */
+  border-radius: 100px;
+}
+
 
 #mutesong {
   position: fixed;
@@ -424,6 +458,7 @@ p.duration {
 #mutesong.muted {
   animation-play-state: paused;
 }
+
 
 
 
