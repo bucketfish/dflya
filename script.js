@@ -1,6 +1,9 @@
 var selected_filters = []
 var favs = []
 var showing_favs = false
+var song=document.getElementById("song");
+
+song.controlsList = "noplaybackrate";
 
 
 function arrayRemove(arr, value) {
@@ -54,7 +57,39 @@ window.onload = function(){
     document.getElementById("fav-" + favs[i]).classList.add("showing");
 
   }
+
 }
+
+var muted = document.getElementById("muted");
+var cd = document.getElementById("mutesong");
+
+
+function toggle_mute(){
+  if (song.muted){
+    song.muted = false;
+    muted.style.display = "none";
+    cd.classList.remove("muted");
+
+
+  } else {
+    song.muted = true;
+    cd.classList.add("muted");
+    muted.style.display = "block";
+  }
+}
+
+document.addEventListener('click', (event) => {
+  console.log("a")
+
+
+  song.muted = true;
+  song.playsinline = true;
+  song.play()
+  song.muted = false;
+
+
+}, {once : true});
+
 
 function toggle_favs(name){
     if (favs.includes(name)){

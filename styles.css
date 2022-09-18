@@ -375,8 +375,55 @@ p.duration {
 
 
 
+#song {
+  position: fixed;
 
+  padding: 25px;
+  left: 20px;
+  bottom: 10px;
+  border-radius: 50px;
+  background-image: url('assets/fav.png');
+  width: 120px;
 
+}
+
+#mutesong {
+  position: fixed;
+  padding: 50px;
+  background-color: var(--t-white);
+  left: 20px;
+  bottom: 10px;
+  border-radius: 100px;
+  border: 7px solid var(--lightbrown);
+  background-image: url(assets/cd.png);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: padding 0.3s;
+  animation: rotate 3s linear 0s infinite;
+}
+
+@keyframes rotate {
+  from{transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+#muted {
+  background-image: url(assets/slash.png);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 90px;
+  left: 30px;
+  bottom: 27px;
+  pointer-events: none;
+  display: none;
+}
+
+#mutesong.muted {
+  animation-play-state: paused;
+}
 
 
 

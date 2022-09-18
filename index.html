@@ -529,7 +529,17 @@
 
 
 
+    <audio id="song" autoplay muted playsinline loop>
+      <source src="assets/audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
+
+    <div id="songcontrol">
+
+      <button id="mutesong" onclick="toggle_mute()"></button>
+      <img id="muted" src="assets/slash.png" alt="">
+    </div>
     <button class="showfavs" onclick="show_favs()"></button>
 
   </body>
