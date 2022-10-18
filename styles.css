@@ -52,6 +52,7 @@ body {
   background-image: url(assets/cake.png), url(assets/tea.png), url(assets/bubbletea.png), url(assets/bear.png), url(assets/cake2.png), url(assets/coffee.png), url(assets/roll.png);
   background-position: 5% 10%, 82% 95%, 100% 80%, 95% 20%, 60% 105%, 15% 100%, 2% 52%;
   background-repeat: no-repeat;
+  opacity: 50%;
   background-size: 35vh;
   position: fixed;
 
