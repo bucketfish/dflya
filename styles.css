@@ -141,6 +141,21 @@ button.showfavs:hover {
   /* height: 60px; */
 }
 
+#frog {
+  position: fixed;
+  width: 100px;
+  /* width: 50px; */
+  /* height: 50px; */
+  right: -40px;
+  bottom: calc(50vh - 100px);
+  transition: right 0.3s;
+}
+
+#frog.showing {
+  right: 0;
+  /* width: 60px; */
+  /* height: 60px; */
+}
 
 .container {
   margin: 10px auto;

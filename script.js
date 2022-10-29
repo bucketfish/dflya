@@ -118,6 +118,14 @@ function toggle_favs(name){
     setCookie("favs", favs, 360);
 }
 
+function toggle_frog(){
+  var frog = document.getElementById("frog");
+  if (frog.classList.contains("showing")){
+    frog.classList.remove("showing")
+  }
+  else frog.classList.add("showing")
+}
+
 function remove_favs(name){
   name = name.slice(4);
   console.log(name);
