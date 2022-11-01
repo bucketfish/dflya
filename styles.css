@@ -477,7 +477,9 @@ p.duration {
   animation-play-state: paused;
 }
 
-
+#tabs {
+  display: none;
+}
 
 
 @media (max-aspect-ratio: 8/5)
@@ -490,11 +492,106 @@ p.duration {
 
 }
 
-@media (max-aspect-ratio: 1/1)
-{
+@media (max-aspect-ratio: 1/1) and (max-width: 800px)
+{ /* tabs */
+
+  #song {
+    display: none; /* FIX!!! */
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .tag {
+    font-size: 0.8em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #tabs {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    position: fixed;
+    background-color: var(--lightbrown);
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+  }
+
+
+  .container {
+    padding-bottom: 7vh;
+    display: block;
+    margin: 1px auto;
+  }
+
+  #content-box {
+    box-sizing: border-box;
+    width: 100%
+  }
+
+  #fav-box-container {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 7vh;
+  }
+
+  #fav-box {
+    position: relative;
+    height: auto;
+    top: 0;
+  }
+
+  #fav-list {
+    overflow-y: visible;
+  }
+
+  .tab {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+  }
+
+  .resources-tab {
+    background-image: url('assets/coffee.png');
+  }
+
+  .favs-tab {
+    background-image: url('assets/fav.png');
+  }
+
+  button.showfavs {
+    display: none;
+  }
+
+
+
+  .meta.info {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  .meta.buttons {
+    gap: 0;
+  }
+
+  .highlighted {
+    background-color: var(--darkbrown);
+  }
+
+
+
   .background {
     background-size: 25vw;
-
   }
 
   .welcome {

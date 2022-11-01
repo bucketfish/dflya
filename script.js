@@ -204,3 +204,28 @@ function filter(filtername){
 
   }
 }
+
+var res_tab_button = document.getElementById("resources-tab")
+var fav_tab_button = document.getElementById("favs-tab")
+
+
+function resources_tab(){
+  document.getElementById("fav-box-container").style.display = "none";
+  showing_favs = false
+  res_tab_button.classList.add("highlighted")
+  fav_tab_button.classList.remove("highlighted")
+  document.getElementById("content-box").style.display = "block";
+
+
+}
+
+function favs_tab(){
+  document.getElementById("fav-box-container").style.display = "block";
+  showing_favs = true
+  res_tab_button.classList.remove("highlighted")
+  fav_tab_button.classList.add("highlighted")
+  document.getElementById("content-box").style.display = "none";
+
+
+
+}
