@@ -495,9 +495,13 @@ p.duration {
 @media (max-aspect-ratio: 1/1) and (max-width: 800px)
 { /* tabs */
 
-  #song {
-    display: none; /* FIX!!! */
+  #songcontrol {
+    scale: 0.6;
+    bottom: 50px;
+    left: -10px;
+    position: fixed;
   }
+  
 
   p {
     font-size: 16px;
