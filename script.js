@@ -132,6 +132,8 @@ function remove_favs(name){
   favs = arrayRemove(favs, name)
   document.getElementById(name).firstElementChild.classList.remove("in-fav");
   document.getElementById("fav-" + name).classList.remove("showing");
+
+  setCookie("favs", favs, 360);
 }
 
 function show_favs() {
