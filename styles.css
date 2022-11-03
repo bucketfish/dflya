@@ -492,7 +492,7 @@ p.duration {
 
 }
 
-@media (max-aspect-ratio: 1/1) and (max-width: 800px)
+@media (max-aspect-ratio: 1/1) and (max-width: 1600px)
 { /* tabs */
 
   #songcontrol {
@@ -501,7 +501,7 @@ p.duration {
     left: -10px;
     position: fixed;
   }
-  
+
 
   p {
     font-size: 16px;
