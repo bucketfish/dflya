@@ -492,7 +492,7 @@ p.duration {
 
 }
 
-@media (max-aspect-ratio: 1/1) and (max-width: 1600px)
+@media (max-aspect-ratio: 1/1), (max-width: 1300px)
 { /* tabs */
 
   #songcontrol {
@@ -603,7 +603,7 @@ p.duration {
   }
 
   .welcome .big-title {
-    font-size: 20vw;
+    font-size: 17vmin;
   }
 
 
