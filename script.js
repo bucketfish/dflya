@@ -40,12 +40,7 @@ function getCookie(cname) {
   }
   return "";
 }
-// https://stackoverflow.com/questions/2980143/i-want-to-store-javascript-array-as-a-cookie
-// var arr = ['foo', 'bar', 'baz'];
-// var json_str = JSON.stringify(arr);
-// createCookie('mycookie', json_str);
-// var json_str = getCookie('mycookie');
-// var arr = JSON.parse(json_str);
+
 
 window.onload = function(){
   favs = getCookie("favs")
