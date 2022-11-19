@@ -50,7 +50,7 @@ with open("resources.tsv") as file:
         resources.append(line)
 
 
-# ok this is easy.
+
 
 formatted = ""
 favs_formatted = ""
@@ -83,10 +83,4 @@ for resource in resources:
 
     count += 1
 
-print()
-print(formatted)
-print()
-print()
-print()
-print()
 print(favs_formatted)

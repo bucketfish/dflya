@@ -74,8 +74,6 @@ function toggle_mute(){
 }
 
 document.addEventListener('click', (event) => {
-  console.log("a")
-
 
   song.muted = true;
   song.playsinline = true;
